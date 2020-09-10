@@ -9,6 +9,7 @@ The Molecular Functional (MF) Portrait is a planetary schematic representation o
 * Fibrotic (F)
 * Depleted (D)
 
+![Graphical abstract](img/Abstract.svg?raw=true "Molecular Functional Portrait")
 
 
 © 2020 BostonGene Corporation.  BostonGene’s MF PortraitTM proprietary software is protected by copyright under U.S. Copyright laws and is the property of BostonGene Corporation. You may not copy, reproduce, distribute, publish, display, perform, modify, create derivative works, transmit, or in any way exploit any such content, sell or offer it for sale, or use such content to construct any kind of database. You may not alter or remove any copyright.
