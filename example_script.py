@@ -1,7 +1,8 @@
 # Python3.7
+import pandas as pd
 
-from clustering.clustering import *
-from clustering.utils import *
+from portraits.clustering import clustering_profile_metrics, clustering_profile_metrics_plot
+from portraits.utils import read_gene_sets, ssgsea_formula, median_scale
 
 # Example script
 
