@@ -26,6 +26,6 @@ The Molecular Functional (MF) Portrait is a planetary schematic representation o
 
 ![mfp_characteristics](img/mfp_characteristics.png?raw=true "MFP characteristics")
 
-Visual tool available at http://science.bostongene.com/tumor-portrait/<br>
+Visual tool available at https://science.bostongene.com/tumor-portrait/<br>
 
 © 2020 BostonGene Corporation.
