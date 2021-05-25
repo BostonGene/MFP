@@ -18,7 +18,7 @@ MODEL = KNeighborsClusterClassifier(norm=False, scale=False, clip=2, k=35).fit(T
 gmt = read_gene_sets('signatures.gmt')  # GMT format like in MSIGdb
 
 # Read expressions
-exp = pd.read_csv('expression.tsv', sep='\t', index_col=0)  # log2+1 transformed; Genes in columns
+exp = pd.read_csv('expression.tsv', sep='\t', index_col=0)  # log2+1 transformed; Genes should appear to be in columns
 
 # Calc signature scores
 signature_scores = ssgsea_formula(exp, gmt)
@@ -27,7 +27,7 @@ signature_scores = ssgsea_formula(exp, gmt)
 signature_scores_scaled = median_scale(signature_scores)
 
 # Predict clusters
-cluster_labels = MODEL.prtedict(signature_scores_scaled[MODEL.X.columns])
+cluster_labels = MODEL.predict(signature_scores_scaled[MODEL.X.columns])
 
 # Output the clusters
 cluster_labels.to_csv('predicted_clusters.tsv', sep='\t', index=True)
