@@ -1,6 +1,6 @@
 import warnings
 
-import community  # louvain
+import community.community_louvain as community
 import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
@@ -122,7 +122,7 @@ def clustering_profile_metrics_plot(cluster_metrics, num_clusters_ylim_max=7):
     clusters_perc = pd.DataFrame([x.value_counts() for x in cluster_metrics.perc],
                                  index=cluster_metrics.index).iloc[:, :10]
 
-    clusters_perc.plot(kind='bar', stached=True, ax=next(af), offset=.5)
+    clusters_perc.plot(kind='bar', stacked=True, ax=next(af)) #offset=.5 was specified in the original code
 
     ax.set_xticks(ax.get_xticks() - .5)
     ax.set_xticklabels(ax.get_xticklabels(), rotation=90)
