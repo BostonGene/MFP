@@ -7,6 +7,7 @@
 1. Outliers detection and batch detection & correction are shown in <a href="https://nbviewer.jupyter.org/github/BostonGene/MFP/blob/master/Methods_Description_-_Batch_correction.ipynb">Methods_Description_-_Batch_correction.ipynb</a> (Melanoma data)
 1. Clusters generation from scaled signatures is shown in <a href="clustering_example.py">clustering_example.py</a>. The process is the same for melanoma and pancan analysis
 1. Finally, having a dataset with scaled signatures and known clusters we can classify another datasets using <a href="classification_example.py">classification_example.py</a>
+1. A walkthrough of the clustering and classification (labeling to IE IE/F F or D) is illustarted in an illustrated python notebook.
 
 
 _.ipynb files could by opened at https://nbviewer.jupyter.org/ or downloaded as HTML files from upstream_html folder_
