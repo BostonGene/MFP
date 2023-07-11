@@ -1,0 +1,13 @@
+install.packages("XML")
+install.packages("RCurl")
+install.packages("httr")
+install.packages("Biostrings")
+install.packages("KEGGREST")
+install.packages("AnnotationDbi")
+install.packages("annotate")
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("affy", dependencies=TRUE)
+BiocManager::install("annotate", dependencies=TRUE)
+BiocManager::install("gcrma", dependencies=TRUE)
