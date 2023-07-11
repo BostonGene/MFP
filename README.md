@@ -24,7 +24,7 @@ For more information visit [BostonGene’s Scientific portal](https://science.bo
 
 
 ## Setup
-Set up your environment according to the requirements in the description of the Setup.md file in the repository.
+Set up your environment according to the requirements in the description of the [Setup.md](Setup.md) file in the repository.
 
 
 If your environment is already set up accordingly, clone the Github repository to start your analysis.
