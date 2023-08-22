@@ -26,7 +26,7 @@ Please follow the instruction steps in the given order:
     sudo apt-get update
     sudo apt-get install python3.10-venv python3.10-dev python3-pip
     
-***Installation of python environment via pip***
+***Create python environment***
 
 
     clone https://github.com/BostonGene/MFP
