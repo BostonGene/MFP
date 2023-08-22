@@ -4,7 +4,7 @@
 Tumor microenvironment (TME) plays a significant role in clinical outcomes and response to antineoplastic therapy. By exerting pro-tumorigenic and anti-tumorigenic actions, tumor-infiltrating immune cells can profoundly influence tumor progression and affect the success of anti-cancer treatments. Cancer-associated fibroblasts (CAFs), as well as angiogenic signals from stromal cells, have also been shown to affect outcomes in cancer patients. 
 
 
-BostonGene has compiled a curated list of 29 functional genes and uses single-sample Gene Set Enrichment Analysis (ssGSEA) scores of their expression levels to classify a tumor sample into one of the TME subtypes (Fig. 1). Materials provided in this repository will help to identify the TME type of an input sample.
+BostonGene has compiled a curated list of 29 functional genes and uses [single-sample Gene Set Enrichment Analysis (ssGSEA) scores](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2783335/) (in BostonGene we developed another formula for ssGSEA scores which is presented in [utils.py](portraits/utils))of their expression levels to classify a tumor sample into one of the TME subtypes (Fig. 1). Materials provided in this repository will help to identify the TME type of an input sample.
 
 ![image2020-11-4_18-20-47](https://user-images.githubusercontent.com/127855909/228009303-964b1147-0f42-4361-819b-bc22be9ccd97.png)
 
@@ -40,8 +40,7 @@ If your environment is already set up accordingly, clone the Github repository t
 
 The analysis workflow is presented in the diagram below, highlighting the main steps and logical elements of the notebook.
 
-![TME  workflow](https://github.com/BenjaminSargsyan/Preview_of_TME/assets/127855909/037999b3-4f43-4770-bf5a-2e7f5ca9b909)
-
+![TME_workflow](https://github.com/BostonGene/MFP/assets/127855909/4b9ed048-2190-444d-8ff0-90db01a6cd80)
 
 The analysis comprises two notebooks: [TME_Classification.ipynb](TME_Classification.ipynb) and [GEO_data_retrieval.ipynb](GEO_data_retrieval.ipynb).
 
