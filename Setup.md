@@ -60,6 +60,6 @@ If you want to create a python environment via conda please follow this [link](h
     Rscript -e 'install.packages("httr", repos="http://cran.rstudio.com/")' 
     Rscript -e 'install.packages("RJSONIO", repos="http://cran.rstudio.com/")' 
     sudo apt-get install libxml2-dev libcurl4-openssl-dev libssl-dev
-    Rscript install_R_packages.R
+    Rscript install_r_packages.R
 
 

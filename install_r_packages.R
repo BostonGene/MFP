@@ -1,13 +1,5 @@
-install.packages("XML")
-install.packages("RCurl")
-install.packages("httr")
-install.packages("Biostrings")
-install.packages("KEGGREST")
-install.packages("AnnotationDbi")
-install.packages("annotate")
+install.packages("BiocManager")
 
-if (!require("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install("affy", dependencies=TRUE)
-BiocManager::install("annotate", dependencies=TRUE)
-BiocManager::install("gcrma", dependencies=TRUE)
+path_to_download_packages<-.libPaths()
+
+BiocManager::install(c("affy", "annotate", "gcrma"), dependencies=TRUE, lib=path_to_download_packages[1])

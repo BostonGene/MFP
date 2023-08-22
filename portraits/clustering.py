@@ -22,7 +22,7 @@ def gen_graph(similarity_matrix, threshold=0.8):
         col = similarity_matrix[col_n].drop(col_n)
         mtr = col[col > threshold]
         for row_n, val in list(mtr.to_dict().items()):
-            G.add_edge(col_n, row_n, weight=round(val, 2))
+            G.add_edge(col_n, row_n, weight= np.round(val, 2))
     return G
 
 
@@ -95,6 +95,7 @@ def clustering_profile_metrics_plot(cluster_metrics, num_clusters_ylim_max=7):
     :param num_clusters_ylim_max:
     :return: axis array
     """
+    
     # necessary for correct x axis sharing
     cluster_metrics.index = [str(x) for x in cluster_metrics.index]
 
@@ -110,7 +111,7 @@ def clustering_profile_metrics_plot(cluster_metrics, num_clusters_ylim_max=7):
 
     ax = cluster_metrics.ch.plot(ax=next(af), label='Calinski Harabasz', color='#E63D06')
     ax.legend()
-
+    
     ax = cluster_metrics.sc.plot(ax=next(af), label='Silhouette score', color='#E63D06')
     ax.legend()
 
@@ -121,8 +122,9 @@ def clustering_profile_metrics_plot(cluster_metrics, num_clusters_ylim_max=7):
     # display percentage for 10 clusters max
     clusters_perc = pd.DataFrame([x.value_counts() for x in cluster_metrics.perc],
                                  index=cluster_metrics.index).iloc[:, :10]
-
-    clusters_perc.plot(kind='bar', stached=True, ax=next(af), offset=.5)
+    ax=next(af)
+    clusters_perc.plot(kind='bar', stacked=True, ax=ax, width = 0.85)
+    ax.legend(loc=(1.01, -0.5))
 
     ax.set_xticks(ax.get_xticks() - .5)
     ax.set_xticklabels(ax.get_xticklabels(), rotation=90)
