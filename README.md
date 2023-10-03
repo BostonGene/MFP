@@ -40,7 +40,7 @@ If your environment is already set up accordingly, clone the Github repository t
 
 The analysis workflow is presented in the diagram below, highlighting the main steps and logical elements of the notebook.
 
-![TME_workflow](https://github.com/BostonGene/MFP/assets/127855909/4b9ed048-2190-444d-8ff0-90db01a6cd80)
+![TME_workflow](https://github.com/BostonGene/MFP/assets/127855909/32a0c5ab-55fc-4670-a522-148899364327)
 
 The analysis comprises two notebooks: [TME_Classification.ipynb](TME_Classification.ipynb) and [GEO_data_retrieval.ipynb](GEO_data_retrieval.ipynb).
 
